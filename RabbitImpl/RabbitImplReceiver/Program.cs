@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Text;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
 
 namespace RabbitImplReceiver
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
-            var factory = new ConnectionFactory {HostName = "localhost"};
+            /*var factory = new ConnectionFactory {HostName = "localhost"};
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
@@ -37,6 +35,7 @@ namespace RabbitImplReceiver
                 }
             }
 
+        }*/
         }
     }
 }

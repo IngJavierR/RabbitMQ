@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using RabbitMQ.Client;
 
 namespace RabbitImpl
 {
@@ -8,7 +7,7 @@ namespace RabbitImpl
     {
         static void Main()
         {
-            var factory = new ConnectionFactory { HostName = "localhost"};
+            /*var factory = new ConnectionFactory { HostName = "localhost"};
             using (var connection = factory.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
@@ -26,7 +25,7 @@ namespace RabbitImpl
                                         basicProperties:null, 
                                         body:body);
                 }
-            }
+            }*/
             Console.WriteLine("Message sended");
             Console.ReadLine();
         }
